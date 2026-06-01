@@ -5,7 +5,7 @@ export interface Client {
 }
 
 export const clients: Client[] = [
-  { name: "Terramore", emoji: "🏢", logo: "/clients/logo-terramore-variable-blanco.png" },
+  { name: "Terramore", emoji: "🏢", logo: "public/clients/logo-terramore-variable-blanco.png" },
   { name: "Estudio Aurora", emoji: "🌿", logo: "/clients/estudio-aurora.png" },
   { name: "Marca X", emoji: "💄", logo: "/clients/marca-x.png" },
 ];

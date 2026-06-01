@@ -12,11 +12,11 @@ export const clients: Client[] = [
   { name: "Afford", emoji: "📷", logo: "/clients/afford.png" },
   { name: "Dannae", emoji: "🍰", logo: "/clients/dannae-nuevo.png" },
   { name: "Tu Yo Print", emoji: "🖨️", logo: "/clients/tuyo-print.png" },
-  { name: "Parrotfy", emoji: "🍰", logo: "/clients/logo-parrotfy.png" },
-  { name: "Prime", emoji: "🍰", logo: "/clients/prime.png" },
-  { name: "EM", emoji: "🍰", logo: "/clients/em.png" },
-  { name: "Coterránea", emoji: "🍰", logo: "/clients/coterranea.png" },
-  { name: "HH", emoji: "🍰", logo: "/clients/happyhost.png" },
+  { name: "Parrotfy", emoji: "🦜", logo: "/clients/logo-parrotfy.png" },
+  { name: "Prime", emoji: "🏢", logo: "/clients/prime.png" },
+  { name: "EM", emoji: "🫂", logo: "/clients/em.png" },
+  { name: "Coterránea", emoji: "⛰️", logo: "/clients/coterranea.png" },
+  { name: "HH", emoji: "🏡", logo: "/clients/happyhost.png" },
 
 ];
 export interface Testimonial {

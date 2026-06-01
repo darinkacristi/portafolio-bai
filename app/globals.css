@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --lilac: #d8bfff;
+  --mint: #b8f0d8;
+  --blush: #ffb8d0;
+  --butter: #fff0a0;
+  --sky: #b8deff;
+  --bg: #fff8ff;
+  --surface: #fff0f8;
+  --ink: #3a2040;
+  --ink2: #6a4870;
+  --ink3: #9a78a0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+/* Cursor personalizado solo en dispositivos con puntero fino */
+@media (hover: hover) and (pointer: fine) {
+  body.has-custom-cursor {
+    cursor: none;
+  }
+  body.has-custom-cursor a,
+  body.has-custom-cursor button {
+    cursor: none;
+  }
+}
+
+::selection {
+  background: var(--lilac);
+  color: var(--ink);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--lilac);
+  border-radius: 999px;
+  border: 2px solid var(--surface);
+}
+
+@layer components {
+  .section-label {
+    @apply flex items-center gap-3 text-[0.55rem] font-bold uppercase tracking-[0.4em] text-ink3;
+  }
+  .section-label::before {
+    content: "";
+    @apply h-[1.5px] w-8 flex-shrink-0 bg-lilac;
+  }
+  .section-title {
+    @apply text-[clamp(2.5rem,6vw,4.5rem)] font-black uppercase leading-none tracking-[-0.03em] text-ink;
+  }
+  .pill {
+    @apply rounded-full px-4 py-1.5 text-[0.55rem] font-bold uppercase tracking-[0.18em] text-ink;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

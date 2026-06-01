@@ -6,11 +6,15 @@ export interface Client {
 
 export const clients: Client[] = [
   { name: "Terramore", emoji: "🍝", logo: "/clients/logo-terramore.png" },
-  { name: "Bluro", emoji: "⌨️", logo: "/clients/bluro.png" },
+  { name: "Bluro", emoji: "⌨️", logo: "/clients/bluro-nuevo.png" },
   { name: "Frutiferia", emoji: "🥬", logo: "/clients/frutiferia-morado.png" },
-  { name: "Taller Zarzamora", emoji: "🫐", logo: "/clients/taller-zarzamora.png" },
+  { name: "Taller Zarzamora", emoji: "🫐", logo: "/clients/taller-zarzamora-nuevo.png" },
   { name: "Afford", emoji: "📷", logo: "/clients/afford.png" },
-  { name: "Dannae", emoji: "🍰", logo: "/clients/dannae.png" },
+  { name: "Dannae", emoji: "🍰", logo: "/clients/dannae-nuevo.png" },
+  { name: "Tu Yo Print", emoji: "🖨️", logo: "/clients/dannae-nuevo.png" },
+  { name: "Parrotfy", emoji: "🍰", logo: "/clients/parrotfy.png" },
+  { name: "Prime", emoji: "🍰", logo: "/clients/prime.png" },
+  { name: "em", emoji: "🍰", logo: "/clients/em.png" },
 
 ];
 export interface Testimonial {

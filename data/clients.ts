@@ -9,7 +9,6 @@ export const clients: Client[] = [
   { name: "Estudio Aurora", emoji: "🌿", logo: "/clients/estudio-aurora.png" },
   { name: "Marca X", emoji: "💄", logo: "/clients/marca-x.png" },
 ];
-
 export interface Testimonial {
   name: string;
   role: string;

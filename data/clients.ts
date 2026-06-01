@@ -16,7 +16,7 @@ export const clients: Client[] = [
   { name: "Prime", emoji: "🏢", logo: "/clients/prime.png" },
   { name: "EM", emoji: "🫂", logo: "/clients/em.png" },
   { name: "Coterránea", emoji: "⛰️", logo: "/clients/coterranea.png" },
-  { name: "HH", emoji: "🏡", logo: "/clients/happyhost.png" },
+  { name: "HH", emoji: "🏡", logo: "/clients/HappyHost-logo.png" },
 
 ];
 export interface Testimonial {

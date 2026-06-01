@@ -6,14 +6,11 @@ export interface Client {
 }
 
 export const clients: Client[] = [
-  { name: "Beauty Brand", emoji: "🏢" },
-  { name: "Estudio Aurora", emoji: "🌿" },
-  { name: "Marca X", emoji: "💄" },
-  { name: "Inmobiliaria Sol", emoji: "🏠" },
-  { name: "Pastel Records", emoji: "🎵" },
-  { name: "Lifestyle Brand", emoji: "👗" },
-  { name: "Revista Pétalo", emoji: "🍃" },
-  { name: "Productora Luna", emoji: "🎬" },
+  { name: "Terramore",     emoji: "🏢", logo: "/clients/public/clients/logo-terramore-variable-blanco.png" },
+  { name: "Estudio Aurora",   emoji: "🌿", logo: "/clients/estudio-aurora.png" },
+  { name: "Marca X",          emoji: "💄", logo: "/clients/marca-x.png" },
+  ...
+];
 ];
 
 export interface Testimonial {

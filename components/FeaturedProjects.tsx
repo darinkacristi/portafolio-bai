@@ -6,7 +6,7 @@ export default function FeaturedProjects() {
   const featured = getFeatured();
   return (
     <section className="mx-auto max-w-[1200px] px-6 py-24">
-      <div className="mb-3 flex flex-wrap items-end justify-between gap-4">
+      <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
         <div>
           <div className="section-label mb-2">Selección</div>
           <h2 className="section-title">Proyectos</h2>
@@ -19,7 +19,7 @@ export default function FeaturedProjects() {
         </Link>
       </div>
 
-      <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
         {featured.map((p, i) => (
           <ProjectCard key={p.slug} project={p} index={i} />
         ))}

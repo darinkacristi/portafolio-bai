@@ -147,6 +147,7 @@ Una pieza pensada para fortalecer la conexión de la marca con su audiencia a tr
     roles: ["Dirección Creativa", "Fotografía", "Producción", "Edición"],
     categories: ["Fotografía", "Edición"],
     accent: "#B8F0D8",
+    aspect: "portrait",
   },
   {
     slug: "nuevo-short",
@@ -172,9 +173,10 @@ export function getProject(slug: string): Project | undefined {
 export const featuredSlugs: string[] = [
   "meflipa",                // foto
   "beneficios-del-tofu",    // video
-  "coterranea-ejecutivas",  // foto
-  "examen-60seg",           // video
+  "coterranea-ejecutivas",  // foto 4:5
   "fruti-feria-expansion",  // video
+  "examen-60seg",           // video
+];
 ];
 
 export function getFeatured(): Project[] {

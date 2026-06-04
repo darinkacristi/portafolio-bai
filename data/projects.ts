@@ -21,7 +21,7 @@ export const projects: Project[] = [
     thumbnail: "", // se genera desde Vimeo
     videoUrl: "https://vimeo.com/1198466352?share=copy&fl=sv&fe=ci",
     description:
-      "Campaña audiovisual de lanzamiento para una marca de skincare. Dirección de una pieza cinemática centrada en la textura, la luz suave y el detalle del producto, con una paleta cálida y orgánica.",
+      "​Objetivo del video: Posicionar un producto específico (tofu) mediante un formato educativo y colaborativo. El video busca resolver una necesidad común del público objetivo (cómo aumentar el consumo de proteína diariamente) a través de tres recetas rápidas, demostrando que comer sano no es aburrido ni complejo, impulsando así la compra del ingrediente en su plataforma.🦾",
     roles: ["Dirección", "Dirección de Fotografía", "Edición", "Colorización"],
     categories: ["Comercial", "Video"],
     featured: true,

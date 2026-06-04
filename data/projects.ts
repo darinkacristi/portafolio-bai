@@ -57,23 +57,23 @@ export const projects: Project[] = [
   },
   {
     slug: "examen-60seg",
-    title: "El exámen de 60 segundos",
+    title: "El examen de 60 segundos,
     type: "video",
-    client: "Bluro / Prime Propiedades",
+    client: "Bluro / Prime",
     year: 2026,
-    thumbnail: "",
+    thumbnail: "", // se genera desde Vimeo
     videoUrl: "https://vimeo.com/1198470570?share=copy&fl=sv&fe=ci",
-    description:
-      `Edición de contenido de alto impacto para Prime Propiedades, un proyecto desarrollado desde mi rol como editora de video en la agencia Bluro. ⌨️💻
-       
-       El objetivo de esta pieza fue dinamizar un contenido clave para el sector inmobiliario: cómo filtrar correctamente a los interesados al vender una propiedad para no perder tiempo con perfiles que no van a comprar. A través del montaje, el ritmo y la estructura visual, logramos transformar una explicación técnica en un formato ágil, entretenido y directo al grano.⌨️`,
+    description: `Edición de contenido de alto impacto para Prime Propiedades, un proyecto desarrollado desde mi rol como editora de video en la agencia Bluro. ⌨️💻
 
-",
-    roles: ["Dirección", "Cámara", "Edición", "Motion Graphics"],
-    categories: ["Video", "Dirección Creativa"],
+
+​El objetivo de esta pieza fue dinamizar un contenido clave para el sector inmobiliario: cómo filtrar correctamente a los interesados al vender una propiedad para no perder tiempo con perfiles que no van a comprar. A través del montaje, el ritmo y la estructura visual, logramos transformar una explicación técnica en un formato ágil, entretenido y directo al grano.⌨️`,
+   
+    roles: ["Edición", "Colorización"],
+    categories: ["Comercial", "Video"],
     featured: true,
-    accent: "#D8BFFF",
-  },
+    accent: "#B8F0D8",
+    credits: [
+      { role: "Edición", name: "Baithiare Vásquez" },
   {
     slug: "retratos-de-estudio",
     title: "Retratos de Estudio",

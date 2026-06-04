@@ -1,10 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import type { Project } from "@/lib/types";
 import { getThumbnail } from "@/lib/utils";
-import Thumb from "./Thumb";
 
 const icons: Record<string, string> = { photo: "📷", video: "🎬" };
 
@@ -12,6 +12,7 @@ const aspectClass: Record<string, string> = {
   vertical: "aspect-[9/16]",
   horizontal: "aspect-[4/3]",
   square: "aspect-square",
+  portrait: "aspect-[4/5]",
 };
 
 export default function ProjectCard({
@@ -21,7 +22,10 @@ export default function ProjectCard({
   project: Project;
   index?: number;
 }) {
-  const aspect = aspectClass[project.aspect ?? "horizontal"];
+  const [failed, setFailed] = useState(false);
+  const src = getThumbnail(project);
+  const showImage = src && !failed;
+  const forced = project.aspect ? aspectClass[project.aspect] : null;
 
   return (
     <motion.div
@@ -35,15 +39,40 @@ export default function ProjectCard({
         href={`/portfolio/${project.slug}`}
         className="group relative block overflow-hidden rounded-xl2 border-[1.5px] border-lilac/40 bg-surface no-underline"
       >
-        <div className={`relative w-full overflow-hidden ${aspect}`}>
-          <div className="absolute inset-0 transition-transform duration-500 group-hover:scale-[1.04]">
-            <Thumb
-              src={getThumbnail(project)}
-              alt={project.title}
-              accent={project.accent}
-              icon={icons[project.type]}
-            />
-          </div>
+        <div className="relative w-full overflow-hidden">
+          {showImage ? (
+            forced ? (
+              <div className={`relative w-full ${forced}`}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={src}
+                  alt={project.title}
+                  loading="lazy"
+                  onError={() => setFailed(true)}
+                  className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                />
+              </div>
+            ) : (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                src={src}
+                alt={project.title}
+                loading="lazy"
+                onError={() => setFailed(true)}
+                className="block h-auto w-full transition-transform duration-500 group-hover:scale-[1.04]"
+              />
+            )
+          ) : (
+            <div
+              className={`flex w-full flex-col items-center justify-center gap-2 ${forced ?? aspectClass.horizontal}`}
+              style={{ background: project.accent ?? "#EDD9FF" }}
+            >
+              <span className="text-4xl opacity-40">{icons[project.type]}</span>
+              <span className="text-[0.55rem] font-semibold uppercase tracking-[0.2em] text-ink3">
+                Tu imagen aquí
+              </span>
+            </div>
+          )}
 
           <span className="pill absolute left-3 top-3 z-10 bg-bg/85 backdrop-blur-sm">
             {project.type === "video" ? "▶ Video" : "◳ Foto"}

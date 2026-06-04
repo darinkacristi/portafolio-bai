@@ -169,8 +169,18 @@ export function getProject(slug: string): Project | undefined {
   return projects.find((p) => p.slug === slug);
 }
 
+// Proyectos que aparecen en el inicio, en el orden que tú quieras (por slug)
+export const featuredSlugs: string[] = [
+  "beneficios-del-tofu",
+  "examen-60seg",
+  "vlog-fruti-feria",
+];
+
 export function getFeatured(): Project[] {
-  return projects.filter((p) => p.featured);
+  return featuredSlugs
+    .map((slug) => projects.find((p) => p.slug === slug))
+    .filter((p): p is Project => Boolean(p));
+}
 }
 
 export function getAdjacent(slug: string): {

@@ -1,169 +1,47 @@
-import type { Project } from "@/lib/types";
+export type ProjectType = "photo" | "video";
 
-export const projects: Project[] = [
-  {
-    slug: "beneficios-del-tofu",
-    title: "Beneficios del Tofu",
-    type: "video",
-    client: "Frutiferia",
-    year: 2025,
-    thumbnail: "",
-    videoUrl: "https://vimeo.com/1198466352?share=copy&fl=sv&fe=ci",
-    description: `Cliente: Frutiferia (E-commerce y distribuidor de frutas, verduras y productos saludables en la Región de Valparaíso). 🍉🍍
+export type Category =
+  | "Edición"
+  | "Guionización"
+  | "Fotografía"
+  | "Colorización"
+  | "Grabación";
 
-Objetivo del video: Posicionar un producto específico (tofu) mediante un formato educativo y colaborativo. El video busca resolver una necesidad común del público objetivo (cómo aumentar el consumo de proteína diariamente) a través de tres recetas rápidas, demostrando que comer sano no es aburrido ni complejo, impulsando así la compra del ingrediente en su plataforma. 💪`,
-    roles: ["Dirección", "Dirección de Fotografía", "Edición", "Colorización"],
-    categories: ["Edición", "Colorización"],
-    featured: true,
-    accent: "#B8F0D8",
-    credits: [{ role: "Producción", name: "Baithiare Vásquez" }],
-  },
-  {
-    slug: "editorial-flores-de-invierno",
-    title: "Flores de Invierno",
-    type: "photo",
-    client: "Revista Pétalo",
-    year: 2025,
-    thumbnail: "/projects/flores-de-invierno/cover.jpg",
-    images: [
-      "/projects/flores-de-invierno/01.jpg",
-      "/projects/flores-de-invierno/02.jpg",
-      "/projects/flores-de-invierno/03.jpg",
-      "/projects/flores-de-invierno/04.jpg",
-      "/projects/flores-de-invierno/05.jpg",
-      "/projects/flores-de-invierno/06.jpg",
-    ],
-    description:
-      "Editorial de moda inspirada en la fragilidad del invierno. Retratos con luz natural difusa, tonos pastel y una dirección de arte minimalista que deja respirar a cada imagen.",
-    roles: ["Dirección Creativa", "Fotografía", "Retoque", "Producción"],
-    categories: ["Fotografía"],
-    featured: true,
-    accent: "#FFB8D0",
-  },
-  {
-    slug: "examen-60seg",
-    title: "El examen de 60 segundos",
-    type: "video",
-    client: "Bluro / Prime",
-    year: 2026,
-    thumbnail: "",
-    videoUrl: "https://vimeo.com/1198470570?share=copy&fl=sv&fe=ci",
-    description: `Edición de contenido de alto impacto para Prime Propiedades, un proyecto desarrollado desde mi rol como editora de video en la agencia Bluro. ⌨️💻
+export interface BaseProject {
+  slug: string;
+  title: string;
+  type: ProjectType;
+  client: string;
+  year: number;
+  description: string;
+  roles: string[];
+  categories: Category[];
+  featured?: boolean;
+  /** Imagen usada como portada en grids y como og:image */
+  thumbnail: string;
+  /** Color pastel de fallback mientras carga / si falta la imagen */
+  accent?: string;
+}
 
-El objetivo de esta pieza fue dinamizar un contenido clave para el sector inmobiliario: cómo filtrar correctamente a los interesados al vender una propiedad para no perder tiempo con perfiles que no van a comprar. A través del montaje, el ritmo y la estructura visual, logramos transformar una explicación técnica en un formato ágil, entretenido y directo al grano. ⌨️`,
-    roles: ["Edición", "Colorización"],
-    categories: ["Edición", "Colorización"],
-    featured: true,
-    accent: "#B8F0D8",
-    credits: [{ role: "Edición", name: "Baithiare Vásquez" }],
-  },
-  {
-    slug: "fruti-feria-expansion",
-    title: "Video para Proyecto de Expansión",
-    type: "video",
-    client: "Fruti Feria",
-    year: 2026,
-    thumbnail: "",
-    videoUrl: "https://vimeo.com/1198474686?share=copy&fl=sv&fe=ci",
-    description: `Fruti Feria | Video para Proyecto de Expansión
+export interface PhotoProject extends BaseProject {
+  type: "photo";
+  images: string[];
+}
 
-Edición de video corporativo realizado para respaldar la presentación de un proyecto de expansión postulado a fondos de financiamiento.
+export interface VideoProject extends BaseProject {
+  type: "video";
+  /** URL de YouTube, Vimeo o ruta a un .mp4 local en /public */
+  videoUrl: string;
+  credits?: { role: string; name: string }[];
+}
 
-A través del montaje, la estructura narrativa y el tratamiento audiovisual, el objetivo fue transmitir de forma clara la visión, trayectoria y proyección de crecimiento de la empresa.`,
-    roles: ["Edición"],
-    categories: ["Edición"],
-    featured: true,
-    accent: "#B8F0D8",
-    credits: [{ role: "Edición", name: "Baithiare Vásquez" }],
-  },
-  {
-    slug: "vlog-fruti-feria",
-    title: "Vlog para Fruti Feria",
-    type: "video",
-    client: "Fruti Feria",
-    year: 2025,
-    thumbnail: "",
-    videoUrl: "https://vimeo.com/1198474121?share=copy&fl=sv&fe=ci",
-    description: `Vlog para Fruti Feria
+export type Project = PhotoProject | VideoProject;
 
-Proyecto audiovisual donde estuve a cargo de la grabación y edición completa del contenido, capturando el día a día de la empresa desde una mirada cercana, dinámica y auténtica.
-
-Una pieza pensada para fortalecer la conexión de la marca con su audiencia a través de contenido más humano y espontáneo.`,
-    roles: ["Grabación", "Edición", "Corrección de color"],
-    categories: ["Grabación", "Edición", "Colorización"],
-    featured: true,
-    accent: "#B8F0D8",
-    credits: [{ role: "Realización", name: "Baithiare Vásquez" }],
-  },
-  {
-    slug: "retratos-de-estudio",
-    title: "Retratos de Estudio",
-    type: "photo",
-    client: "Proyecto Personal",
-    year: 2024,
-    thumbnail: "/projects/retratos-de-estudio/cover.jpg",
-    images: [
-      "/projects/retratos-de-estudio/01.jpg",
-      "/projects/retratos-de-estudio/02.jpg",
-      "/projects/retratos-de-estudio/03.jpg",
-      "/projects/retratos-de-estudio/04.jpg",
-    ],
-    description:
-      "Serie de retratos en estudio explorando el color como emoción. Cada retrato usa un fondo pastel distinto para crear una identidad cromática propia.",
-    roles: ["Dirección Creativa", "Fotografía", "Retoque"],
-    categories: ["Fotografía"],
-    accent: "#FFF0A0",
-  },
-  {
-    slug: "spot-inmobiliaria",
-    title: "Spot Inmobiliaria",
-    type: "video",
-    client: "Inmobiliaria Sol",
-    year: 2024,
-    thumbnail: "",
-    videoUrl: "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
-    description:
-      "Spot publicitario para una desarrolladora inmobiliaria. Tomas aéreas, interiores luminosos y un montaje dinámico orientado a generar deseo y confianza.",
-    roles: ["Dirección", "Edición", "Colorización", "Producción"],
-    categories: ["Edición", "Colorización"],
-    accent: "#B8DEFF",
-  },
-  {
-    slug: "lookbook-primavera",
-    title: "Lookbook Primavera",
-    type: "photo",
-    client: "Camila R. — Lifestyle Brand",
-    year: 2024,
-    thumbnail: "/projects/lookbook-primavera/cover.jpg",
-    images: [
-      "/projects/lookbook-primavera/01.jpg",
-      "/projects/lookbook-primavera/02.jpg",
-      "/projects/lookbook-primavera/03.jpg",
-      "/projects/lookbook-primavera/04.jpg",
-      "/projects/lookbook-primavera/05.jpg",
-    ],
-    description:
-      "Lookbook de temporada para una marca de lifestyle. Fotografía fresca al aire libre, paleta luminosa y una dirección de arte que respira frescura y juventud.",
-    roles: ["Dirección Creativa", "Fotografía", "Producción", "Edición"],
-    categories: ["Fotografía", "Edición"],
-    accent: "#B8F0D8",
-  },
+export const CATEGORIES: ("Todos" | Category)[] = [
+  "Todos",
+  "Edición",
+  "Guionización",
+  "Fotografía",
+  "Colorización",
+  "Grabación",
 ];
-
-export function getProject(slug: string): Project | undefined {
-  return projects.find((p) => p.slug === slug);
-}
-
-export function getFeatured(): Project[] {
-  return projects.filter((p) => p.featured);
-}
-
-export function getAdjacent(slug: string): {
-  prev: Project;
-  next: Project;
-} {
-  const i = projects.findIndex((p) => p.slug === slug);
-  const prev = projects[(i - 1 + projects.length) % projects.length];
-  const next = projects[(i + 1) % projects.length];
-  return { prev, next };
-}

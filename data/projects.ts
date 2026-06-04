@@ -57,7 +57,7 @@ export const projects: Project[] = [
   },
   {
     slug: "examen-60seg",
-    title: "El examen de 60 segundos,
+    title: "El examen de 60 segundos",
     type: "video",
     client: "Bluro / Prime",
     year: 2026,

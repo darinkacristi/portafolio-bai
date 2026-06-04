@@ -63,7 +63,7 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
     type: "photo",
     client: "Coterránea",
     year: 2026,
-    thumbnail: "/projects/coterranea.jpeg",
+    thumbnail: "/projects/coterranea-1.jpeg",
     images: [
       "/projects/coterranea-1.jpeg",
   

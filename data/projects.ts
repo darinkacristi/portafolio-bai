@@ -57,6 +57,25 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
     featured: true,
     accent: "#FFB8D0",
   },
+    {
+    slug: "coterranea",
+    title: "Tupungato de Coterránea",
+    type: "photo",
+    client: "Coterránea",
+    year: 2026,
+    thumbnail: "/projects/coterranea.jpeg",
+    images: [
+      "/projects/coterranea.jpeg",
+  
+    ],
+    description:
+      "Editorial de moda inspirada en la fragilidad del invierno. Retratos con luz natural difusa, tonos pastel y una dirección de arte minimalista que deja respirar a cada imagen.",
+    roles: ["Dirección Creativa", "Fotografía", "Retoque", "Producción"],
+    categories: ["Fotografía"],
+    featured: true,
+    accent: "#FFB8D0",
+    aspect: "horizontal"
+  },
   {
     slug: "examen-60seg",
     title: "El examen de 60 segundos",
@@ -172,6 +191,7 @@ export function getProject(slug: string): Project | undefined {
 // Proyectos que aparecen en el inicio, en el orden que tú quieras (por slug)
 export const featuredSlugs: string[] = [
   "meflipa",                // foto
+  "coterranea",             // 
   "beneficios-del-tofu",    // video
   "coterranea-ejecutivas",  // foto 4:5
   "fruti-feria-expansion",  // video

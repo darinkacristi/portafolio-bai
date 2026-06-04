@@ -139,7 +139,7 @@ Una pieza pensada para fortalecer la conexión de la marca con su audiencia a tr
       "/projects/ejecutivas-1.png",
       "/projects/ejecutivas-2.png",
       "/projects/ejecutivas-1.pngg",
-      "/projects/lookbook-primavera/04.jpg",
+      "/projects/ejecutivas-1",
       
     ],
     description:

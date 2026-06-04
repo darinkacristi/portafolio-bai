@@ -27,7 +27,7 @@ export const projects: Project[] = [
     featured: true,
     accent: "#B8F0D8",
     credits: [
-      { role: "Producción", name: "Estudio Aurora" },
+      { role: "Producción", name: "Baithiare Vásquez" },
       { role: "Música", name: "Lucía Fernández" },
     ],
   },

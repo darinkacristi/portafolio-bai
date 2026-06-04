@@ -8,6 +8,8 @@ export type Category =
   | "Grabación"
   | "Motion Graphics";
 
+export type Aspect = "vertical" | "horizontal" | "square";
+
 export interface BaseProject {
   slug: string;
   title: string;
@@ -18,10 +20,10 @@ export interface BaseProject {
   roles: string[];
   categories: Category[];
   featured?: boolean;
-  /** Imagen usada como portada en grids y como og:image */
   thumbnail: string;
-  /** Color pastel de fallback mientras carga / si falta la imagen */
   accent?: string;
+  /** Orientación de la portada: "vertical", "horizontal" o "square" */
+  aspect?: Aspect;
 }
 
 export interface PhotoProject extends BaseProject {
@@ -31,7 +33,6 @@ export interface PhotoProject extends BaseProject {
 
 export interface VideoProject extends BaseProject {
   type: "video";
-  /** URL de YouTube, Vimeo o ruta a un .mp4 local en /public */
   videoUrl: string;
   credits?: { role: string; name: string }[];
 }

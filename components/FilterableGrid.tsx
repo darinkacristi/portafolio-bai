@@ -1,7 +1,6 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
 import type { Project } from "@/lib/types";
 import { CATEGORIES } from "@/lib/types";
 import { cx } from "@/lib/utils";
@@ -17,7 +16,6 @@ export default function FilterableGrid({ projects }: { projects: Project[] }) {
 
   return (
     <div>
-      {/* Filtros */}
       <div className="mb-10 flex flex-wrap gap-2">
         {CATEGORIES.map((cat) => {
           const isActive = cat === active;
@@ -38,17 +36,11 @@ export default function FilterableGrid({ projects }: { projects: Project[] }) {
         })}
       </div>
 
-      {/* Grid */}
-      <motion.div
-        layout
-        className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
-      >
-        <AnimatePresence mode="popLayout">
-          {filtered.map((p, i) => (
-            <ProjectCard key={p.slug} project={p} index={i} />
-          ))}
-        </AnimatePresence>
-      </motion.div>
+      <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
+        {filtered.map((p, i) => (
+          <ProjectCard key={p.slug} project={p} index={i} />
+        ))}
+      </div>
 
       {filtered.length === 0 && (
         <p className="py-16 text-center text-sm text-ink3">

@@ -8,7 +8,7 @@ export type Category =
   | "Grabación"
   | "Motion Graphics";
 
-export type Aspect = "vertical" | "horizontal" | "square";
+export type Aspect = "vertical" | "horizontal" | "square" | "portrait";
 
 export interface BaseProject {
   slug: string;

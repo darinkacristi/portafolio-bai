@@ -13,13 +13,13 @@ import type { Project } from "@/lib/types";
  */
 export const projects: Project[] = [
   {
-    slug: "campana-marca-x",
-    title: "Campaña Marca X",
+    slug: "beneficios-del-tofu",
+    title: "Beneficios del Tofu",
     type: "video",
-    client: "Marca X",
+    client: "Frutiferia",
     year: 2025,
-    thumbnail: "", // se genera desde YouTube
-    videoUrl: "https://www.youtube.com/watch?v=ScMzIvxBSi4",
+    thumbnail: "", // se genera desde Vimeo
+    videoUrl: "https://vimeo.com/1198466352?share=copy&fl=sv&fe=ci",
     description:
       "Campaña audiovisual de lanzamiento para una marca de skincare. Dirección de una pieza cinemática centrada en la textura, la luz suave y el detalle del producto, con una paleta cálida y orgánica.",
     roles: ["Dirección", "Dirección de Fotografía", "Edición", "Colorización"],

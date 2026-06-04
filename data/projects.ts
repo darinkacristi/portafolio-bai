@@ -158,6 +158,27 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
       { role: "Edición", name: "Baithiare Vásquez" },
     ],
   },
+  {
+    slug: "vlog-fruti-feria",
+    title: "Vlog para Fruti Feria",
+    type: "video",
+    client: "Fruti Feria",
+    year: 2025,
+    thumbnail: "", // se genera desde Vimeo
+    videoUrl: "https://vimeo.com/1198474121?share=copy&fl=sv&fe=ci",
+    description: `Vlog para Fruti Feria
+
+Proyecto audiovisual donde estuve a cargo de la grabación y edición completa del contenido, capturando el día a día de la empresa desde una mirada cercana, dinámica y auténtica.
+
+Una pieza pensada para fortalecer la conexión de la marca con su audiencia a través de contenido más humano y espontáneo.`,
+    roles: ["Grabación", "Edición", "Corrección de color"],
+    categories: ["Comercial", "Video"],
+    featured: true,
+    accent: "#B8F0D8",
+    credits: [
+      { role: "Realización", name: "Baithiare Vásquez" },
+    ],
+  },
 ];
 
 export function getProject(slug: string): Project | undefined {

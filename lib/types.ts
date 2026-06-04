@@ -47,4 +47,3 @@ export const CATEGORIES: ("Todos" | Category)[] = [
   "Grabación",
   "Motion Graphics",
 ];
-];

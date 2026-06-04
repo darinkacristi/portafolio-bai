@@ -56,15 +56,19 @@ export const projects: Project[] = [
     accent: "#FFB8D0",
   },
   {
-    slug: "videoclip-luz",
-    title: "Luz — Videoclip",
+    slug: "examen-60seg",
+    title: "El exámen de 60 segundos",
     type: "video",
-    client: "Sello Pastel Records",
-    year: 2024,
+    client: "Bluro / Prime Propiedades",
+    year: 2026,
     thumbnail: "",
     videoUrl: "https://vimeo.com/76979871",
     description:
-      "Videoclip musical rodado en locación natural. Un relato visual sobre el amanecer, construido con cámara en mano, transiciones orgánicas y una colorización de tonos miel.",
+      `Edición de contenido de alto impacto para Prime Propiedades, un proyecto desarrollado desde mi rol como editora de video en la agencia Bluro. ⌨️💻
+       
+       El objetivo de esta pieza fue dinamizar un contenido clave para el sector inmobiliario: cómo filtrar correctamente a los interesados al vender una propiedad para no perder tiempo con perfiles que no van a comprar. A través del montaje, el ritmo y la estructura visual, logramos transformar una explicación técnica en un formato ágil, entretenido y directo al grano.⌨️`,
+
+",
     roles: ["Dirección", "Cámara", "Edición", "Motion Graphics"],
     categories: ["Video", "Dirección Creativa"],
     featured: true,

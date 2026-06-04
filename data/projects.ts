@@ -20,6 +20,25 @@ Objetivo del video: Posicionar un producto específico (tofu) mediante un format
     credits: [{ role: "Producción", name: "Baithiare Vásquez" }],
   },
   {
+    slug: "fruti-feria-expansion",
+    title: "Video para Proyecto de Expansión",
+    type: "video",
+    client: "Fruti Feria",
+    year: 2026,
+    thumbnail: "",
+    videoUrl: "https://vimeo.com/1198474686?share=copy&fl=sv&fe=ci",
+    description: `Fruti Feria | Video para Proyecto de Expansión
+
+Edición de video corporativo realizado para respaldar la presentación de un proyecto de expansión postulado a fondos de financiamiento.
+
+A través del montaje, la estructura narrativa y el tratamiento audiovisual, el objetivo fue transmitir de forma clara la visión, trayectoria y proyección de crecimiento de la empresa.`,
+    roles: ["Edición", "Motion Graphics"],
+    categories: ["Edición", "Colorización", "Motion Graphics"],
+    featured: true,
+    accent: "#B8F0D8",
+    credits: [{ role: "Edición", name: "Baithiare Vásquez" }],
+  },
+  {
     slug: "editorial-flores-de-invierno",
     title: "Flores de Invierno",
     type: "photo",

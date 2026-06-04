@@ -177,7 +177,6 @@ export const featuredSlugs: string[] = [
   "fruti-feria-expansion",  // video
   "examen-60seg",           // video
 ];
-];
 
 export function getFeatured(): Project[] {
   return featuredSlugs

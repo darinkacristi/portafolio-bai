@@ -114,39 +114,7 @@ Una pieza pensada para fortalecer la conexión de la marca con su audiencia a tr
     aspect: "vertical",
     credits: [{ role: "Realización", name: "Baithiare Vásquez" }],
   },
-  {
-    slug: "retratos-de-estudio",
-    title: "Retratos de Estudio",
-    type: "photo",
-    client: "Proyecto Personal",
-    year: 2024,
-    thumbnail: "/projects/retratos-de-estudio/cover.jpg",
-    images: [
-      "/projects/retratos-de-estudio/01.jpg",
-      "/projects/retratos-de-estudio/02.jpg",
-      "/projects/retratos-de-estudio/03.jpg",
-      "/projects/retratos-de-estudio/04.jpg",
-    ],
-    description:
-      "Serie de retratos en estudio explorando el color como emoción. Cada retrato usa un fondo pastel distinto para crear una identidad cromática propia.",
-    roles: ["Dirección Creativa", "Fotografía", "Retoque"],
-    categories: ["Fotografía"],
-    accent: "#FFF0A0",
-  },
-  {
-    slug: "spot-inmobiliaria",
-    title: "Spot Inmobiliaria",
-    type: "video",
-    client: "Inmobiliaria Sol",
-    year: 2024,
-    thumbnail: "",
-    videoUrl: "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
-    description:
-      "Spot publicitario para una desarrolladora inmobiliaria. Tomas aéreas, interiores luminosos y un montaje dinámico orientado a generar deseo y confianza.",
-    roles: ["Dirección", "Edición", "Colorización", "Producción"],
-    categories: ["Edición", "Colorización"],
-    accent: "#B8DEFF",
-  },
+ 
   {
     slug: "coterranea-ejecutivas",
     title: "Ejecutivas de Venta",

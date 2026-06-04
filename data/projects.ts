@@ -62,7 +62,7 @@ export const projects: Project[] = [
     client: "Bluro / Prime Propiedades",
     year: 2026,
     thumbnail: "",
-    videoUrl: "https://vimeo.com/76979871",
+    videoUrl: "https://vimeo.com/1198470570?share=copy&fl=sv&fe=ci",
     description:
       `Edición de contenido de alto impacto para Prime Propiedades, un proyecto desarrollado desde mi rol como editora de video en la agencia Bluro. ⌨️💻
        

@@ -47,8 +47,8 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
     thumbnail: "/projects/meflipa.jpeg",
     images: [
       "/projects/meflipa.jpeg",
-      "/projects/meflipa2.jpeg",
-      "/projects/meflipa3.jpeg",
+      "/projects/meflipa-2.jpeg",
+      "/projects/meflipa-3jpeg.jpeg",
     
     ],
     description:

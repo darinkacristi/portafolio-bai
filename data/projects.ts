@@ -129,11 +129,11 @@ Una pieza pensada para fortalecer la conexión de la marca con su audiencia a tr
     accent: "#B8DEFF",
   },
   {
-    slug: "lookbook-primavera",
-    title: "Lookbook Primavera",
+    slug: "coterranea-ejecutivas",
+    title: "Ejecutivas de Venta",
     type: "photo",
-    client: "Camila R. — Lifestyle Brand",
-    year: 2024,
+    client: "Coterránea",
+    year: 2026,
     thumbnail: "/projects/lookbook-primavera/cover.jpg",
     images: [
       "/projects/lookbook-primavera/01.jpg",

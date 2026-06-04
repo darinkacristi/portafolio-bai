@@ -13,7 +13,7 @@ export const projects: Project[] = [
 
 Objetivo del video: Posicionar un producto específico (tofu) mediante un formato educativo y colaborativo. El video busca resolver una necesidad común del público objetivo (cómo aumentar el consumo de proteína diariamente) a través de tres recetas rápidas, demostrando que comer sano no es aburrido ni complejo, impulsando así la compra del ingrediente en su plataforma. 💪`,
     roles: ["Dirección", "Dirección de Fotografía", "Edición", "Colorización"],
-    categories: ["Edición", "Colorización"],
+    categories: ["Edición", "Grabación", "Guionización", "Colorización"],
     featured: true,
     accent: "#B8F0D8",
     credits: [{ role: "Producción", name: "Baithiare Vásquez" }],
@@ -70,8 +70,8 @@ El objetivo de esta pieza fue dinamizar un contenido clave para el sector inmobi
 Edición de video corporativo realizado para respaldar la presentación de un proyecto de expansión postulado a fondos de financiamiento.
 
 A través del montaje, la estructura narrativa y el tratamiento audiovisual, el objetivo fue transmitir de forma clara la visión, trayectoria y proyección de crecimiento de la empresa.`,
-    roles: ["Edición"],
-    categories: ["Edición"],
+    roles: ["Edición", "Motion Graphics"],
+    categories: ["Edición", "Colorización", "Motion Graphics"],
     featured: true,
     accent: "#B8F0D8",
     credits: [{ role: "Edición", name: "Baithiare Vásquez" }],
@@ -90,7 +90,7 @@ Proyecto audiovisual donde estuve a cargo de la grabación y edición completa d
 
 Una pieza pensada para fortalecer la conexión de la marca con su audiencia a través de contenido más humano y espontáneo.`,
     roles: ["Grabación", "Edición", "Corrección de color"],
-    categories: ["Grabación", "Edición", "Colorización"],
+    categories: ["Edición", "Guionización", "Colorización", "Grabación"],
     featured: true,
     accent: "#B8F0D8",
     credits: [{ role: "Realización", name: "Baithiare Vásquez" }],
@@ -159,11 +159,4 @@ export function getFeatured(): Project[] {
 }
 
 export function getAdjacent(slug: string): {
-  prev: Project;
-  next: Project;
-} {
-  const i = projects.findIndex((p) => p.slug === slug);
-  const prev = projects[(i - 1 + projects.length) % projects.length];
-  const next = projects[(i + 1) % projects.length];
-  return { prev, next };
-}
+  prev:

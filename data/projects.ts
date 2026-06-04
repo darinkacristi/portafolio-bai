@@ -49,7 +49,6 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
       "/projects/meflipa.jpeg",
       "/projects/meflipa-2.jpeg",
       "/projects/meflipa-3jpeg.jpeg",
-    
     ],
     description:
       "Editorial de moda inspirada en la fragilidad del invierno. Retratos con luz natural difusa, tonos pastel y una dirección de arte minimalista que deja respirar a cada imagen.",
@@ -180,7 +179,6 @@ export function getFeatured(): Project[] {
   return featuredSlugs
     .map((slug) => projects.find((p) => p.slug === slug))
     .filter((p): p is Project => Boolean(p));
-}
 }
 
 export function getAdjacent(slug: string): {

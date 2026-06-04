@@ -74,7 +74,10 @@ export const projects: Project[] = [
     accent: "#B8F0D8",
     credits: [
       { role: "Edición", name: "Baithiare Vásquez" },
+    ],
+  },
   {
+    slug: "retratos-de-estudio",
     slug: "retratos-de-estudio",
     title: "Retratos de Estudio",
     type: "photo",

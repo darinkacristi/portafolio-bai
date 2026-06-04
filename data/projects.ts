@@ -134,13 +134,13 @@ Una pieza pensada para fortalecer la conexión de la marca con su audiencia a tr
     type: "photo",
     client: "Coterránea",
     year: 2026,
-    thumbnail: "/projects/lookbook-primavera/cover.jpg",
+    thumbnail: "/projects/ejecutivas-1.png",
     images: [
-      "/projects/lookbook-primavera/01.jpg",
-      "/projects/lookbook-primavera/02.jpg",
-      "/projects/lookbook-primavera/03.jpg",
+      "/projects/ejecutivas-1.png",
+      "/projects/ejecutivas-2.png",
+      "/projects/ejecutivas-1.pngg",
       "/projects/lookbook-primavera/04.jpg",
-      "/projects/lookbook-primavera/05.jpg",
+      
     ],
     description:
       "Lookbook de temporada para una marca de lifestyle. Fotografía fresca al aire libre, paleta luminosa y una dirección de arte que respira frescura y juventud.",

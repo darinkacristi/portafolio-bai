@@ -151,6 +151,20 @@ Una pieza pensada para fortalecer la conexión de la marca con su audiencia a tr
     categories: ["Fotografía", "Edición"],
     accent: "#B8F0D8",
   },
+  {
+    slug: "nuevo-short",
+    title: "Título del video",
+    type: "video",
+    client: "Cliente",
+    year: 2026,
+    thumbnail: "",
+    videoUrl: "https://www.youtube.com/shorts/ZLYSp5e89lA",
+    description: `Descripción del proyecto.`,
+    roles: ["Edición"],
+    categories: ["Edición"],
+    featured: true,
+    aspect: "vertical",
+  },
 ];
 
 export function getProject(slug: string): Project | undefined {

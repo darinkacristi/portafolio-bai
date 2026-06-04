@@ -175,7 +175,6 @@ export const featuredSlugs: string[] = [
   "coterranea-ejecutivas",  // foto
   "examen-60seg",           // video
 ];
-];
 
 export function getFeatured(): Project[] {
   return featuredSlugs

@@ -5,7 +5,8 @@ export type Category =
   | "Guionización"
   | "Fotografía"
   | "Colorización"
-  | "Grabación";
+  | "Grabación"
+  | "Motion Graphics";
 
 export interface BaseProject {
   slug: string;
@@ -44,4 +45,6 @@ export const CATEGORIES: ("Todos" | Category)[] = [
   "Fotografía",
   "Colorización",
   "Grabación",
+  "Motion Graphics",
+];
 ];

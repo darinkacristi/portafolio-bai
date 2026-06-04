@@ -1,12 +1,11 @@
 export type ProjectType = "photo" | "video";
 
 export type Category =
+  | "Edición"
+  | "Guionización"
   | "Fotografía"
-  | "Video"
-  | "Comercial"
-  | "Moda"
-  | "Editorial"
-  | "Dirección Creativa";
+  | "Colorización"
+  | "Grabación";
 
 export interface BaseProject {
   slug: string;
@@ -40,10 +39,9 @@ export type Project = PhotoProject | VideoProject;
 
 export const CATEGORIES: ("Todos" | Category)[] = [
   "Todos",
+  "Edición",
+  "Guionización",
   "Fotografía",
-  "Video",
-  "Comercial",
-  "Moda",
-  "Editorial",
-  "Dirección Creativa",
+  "Colorización",
+  "Grabación",
 ];

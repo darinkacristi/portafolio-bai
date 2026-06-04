@@ -78,7 +78,6 @@ export const projects: Project[] = [
   },
   {
     slug: "retratos-de-estudio",
-    slug: "retratos-de-estudio",
     title: "Retratos de Estudio",
     type: "photo",
     client: "Proyecto Personal",

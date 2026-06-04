@@ -21,7 +21,7 @@ export const projects: Project[] = [
     thumbnail: "", // se genera desde Vimeo
     videoUrl: "https://vimeo.com/1198466352?share=copy&fl=sv&fe=ci",
     description:
-      "Cliente: Frutiferia (E-commerce y distribuidor de frutas, verduras y productos saludables en la Región de Valparaíso).🍉🍍"
+      "Cliente: Frutiferia (E-commerce y distribuidor de frutas, verduras y productos saludables en la Región de Valparaíso).🍉🍍",
       "​Objetivo del video: Posicionar un producto específico (tofu) mediante un formato educativo y colaborativo. El video busca resolver una necesidad común del público objetivo (cómo aumentar el consumo de proteína diariamente) a través de tres recetas rápidas, demostrando que comer sano no es aburrido ni complejo, impulsando así la compra del ingrediente en su plataforma.🦾",
     roles: ["Dirección", "Dirección de Fotografía", "Edición", "Colorización"],
     categories: ["Comercial", "Video"],

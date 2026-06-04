@@ -96,16 +96,24 @@ export const projects: Project[] = [
     accent: "#FFF0A0",
   },
   {
-    slug: "spot-inmobiliaria",
-    title: "Spot Inmobiliaria",
+    slug: "tu-familia-crecio",
+    title: "Tu familia creció",
     type: "video",
-    client: "Inmobiliaria Sol",
-    year: 2024,
+    client: "Bluro / Prime",
+    year: 2026,
     thumbnail: "",
-    videoUrl: "https://www.youtube.com/watch?v=aqz-KE-bpKQ",
+    videoUrl: "https://vimeo.com/1198470569?share=copy&fl=sv&fe=ci",
     description:
-      "Spot publicitario para una desarrolladora inmobiliaria. Tomas aéreas, interiores luminosos y un montaje dinámico orientado a generar deseo y confianza.",
-    roles: ["Dirección", "Edición", "Colorización", "Producción"],
+      `Agencia: Bluro.
+
+
+​Cliente final: Prime Propiedades (Corredora y consultora inmobiliaria).
+
+​Objetivo del video: Posicionar a la marca como experta en asesoría inmobiliaria mediante un formato educativo y cercano. La pieza busca guiar a potenciales compradores e inversionistas en la elección correcta de una vivienda, incrementando el nivel de confianza y facilitando la captación de leads cualificados para la corredora.
+
+​Roles ejecutados: Postproducción audiovisual.`,
+    
+    roles: ["Edición", "Colorización", "Post Producción"],
     categories: ["Comercial", "Video"],
     accent: "#B8DEFF",
   },

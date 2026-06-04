@@ -19,7 +19,7 @@ export default function FeaturedProjects() {
         </Link>
       </div>
 
-     <div className="columns-1 gap-4 sm:columns-2 lg:columns-3">
+     <div className="columns-1 gap-4 sm:columns-2 lg:columns-4">
         {featured.map((p, i) => (
           <ProjectCard key={p.slug} project={p} index={i} />
         ))}

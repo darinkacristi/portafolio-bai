@@ -82,6 +82,7 @@ export default async function ProjectPage({
           <VideoPlayer
             url={(project as VideoProject).videoUrl}
             title={project.title}
+            aspect={project.aspect}
           />
         ) : (
           <Gallery
@@ -92,7 +93,7 @@ export default async function ProjectPage({
 
         {/* Info + roles */}
         <div className="mt-12 grid grid-cols-1 gap-10 md:grid-cols-[1.6fr_1fr]">
-         <div>
+          <div>
             <div className="section-label mb-3">Sobre el proyecto</div>
             {project.description.split("\n").filter((l) => l.trim()).map((parrafo, i) => (
               <p key={i} className="mb-4 text-[0.9rem] leading-[1.9] text-ink2">

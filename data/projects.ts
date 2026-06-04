@@ -138,8 +138,8 @@ Una pieza pensada para fortalecer la conexión de la marca con su audiencia a tr
     images: [
       "/projects/ejecutivas-1.png",
       "/projects/ejecutivas-2.png",
-      "/projects/ejecutivas-1.pngg",
-      "/projects/ejecutivas-1",
+      "/projects/ejecutivas-1.png",
+      "/projects/ejecutivas-1.png",
       
     ],
     description:

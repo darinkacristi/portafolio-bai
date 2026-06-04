@@ -171,11 +171,10 @@ export function getProject(slug: string): Project | undefined {
 // Proyectos que aparecen en el inicio, en el orden que tú quieras (por slug)
 export const featuredSlugs: string[] = [
   "meflipa",                // foto
-  "meflipa",                // foto
   "beneficios-del-tofu",    // video
   "coterranea-ejecutivas",  // foto
-  "meflipa",                // foto
   "examen-60seg",           // video
+  "fruti-feria-expansion",  // video
 ];
 
 export function getFeatured(): Project[] {

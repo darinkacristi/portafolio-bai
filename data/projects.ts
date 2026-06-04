@@ -137,6 +137,27 @@ export const projects: Project[] = [
     categories: ["Moda", "Comercial", "Fotografía"],
     accent: "#B8F0D8",
   },
+  {
+    slug: "fruti-feria-expansion",
+    title: "Video para Proyecto de Expansión",
+    type: "video",
+    client: "Fruti Feria",
+    year: 2026,
+    thumbnail: "", // se genera desde Vimeo
+    videoUrl: "https://vimeo.com/1198474686?share=copy&fl=sv&fe=ci",
+    description: `Fruti Feria | Video para Proyecto de Expansión
+
+Edición de video corporativo realizado para respaldar la presentación de un proyecto de expansión postulado a fondos de financiamiento.
+
+A través del montaje, la estructura narrativa y el tratamiento audiovisual, el objetivo fue transmitir de forma clara la visión, trayectoria y proyección de crecimiento de la empresa.`,
+    roles: ["Edición"],
+    categories: ["Comercial", "Video"],
+    featured: true,
+    accent: "#B8F0D8",
+    credits: [
+      { role: "Edición", name: "Baithiare Vásquez" },
+    ],
+  },
 ];
 
 export function getProject(slug: string): Project | undefined {

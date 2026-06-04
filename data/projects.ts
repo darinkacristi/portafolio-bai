@@ -16,6 +16,7 @@ Objetivo del video: Posicionar un producto específico (tofu) mediante un format
     categories: ["Edición", "Grabación", "Guionización", "Colorización"],
     featured: true,
     accent: "#B8F0D8",
+    aspect: "vertical",
     credits: [{ role: "Producción", name: "Baithiare Vásquez" }],
   },
   {
@@ -55,6 +56,7 @@ El objetivo de esta pieza fue dinamizar un contenido clave para el sector inmobi
     categories: ["Edición", "Colorización"],
     featured: true,
     accent: "#B8F0D8",
+    aspect: "vertical",
     credits: [{ role: "Edición", name: "Baithiare Vásquez" }],
   },
   {
@@ -93,6 +95,7 @@ Una pieza pensada para fortalecer la conexión de la marca con su audiencia a tr
     categories: ["Edición", "Guionización", "Colorización", "Grabación"],
     featured: true,
     accent: "#B8F0D8",
+    aspect: "vertical",
     credits: [{ role: "Realización", name: "Baithiare Vásquez" }],
   },
   {

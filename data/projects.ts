@@ -39,19 +39,17 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
     credits: [{ role: "Edición", name: "Baithiare Vásquez" }],
   },
   {
-    slug: "editorial-flores-de-invierno",
-    title: "Flores de Invierno",
+    slug: "meflipa",
+    title: "Meflipa",
     type: "photo",
-    client: "Revista Pétalo",
-    year: 2025,
-    thumbnail: "/projects/flores-de-invierno/cover.jpg",
+    client: "Meflipa",
+    year: 2026,
+    thumbnail: "/projects/meflipa.jpeg",
     images: [
-      "/projects/flores-de-invierno/01.jpg",
-      "/projects/flores-de-invierno/02.jpg",
-      "/projects/flores-de-invierno/03.jpg",
-      "/projects/flores-de-invierno/04.jpg",
-      "/projects/flores-de-invierno/05.jpg",
-      "/projects/flores-de-invierno/06.jpg",
+      "/projects/meflipa.jpeg",
+      "/projects/meflipa2.jpeg",
+      "/projects/meflipa3.jpeg",
+    
     ],
     description:
       "Editorial de moda inspirada en la fragilidad del invierno. Retratos con luz natural difusa, tonos pastel y una dirección de arte minimalista que deja respirar a cada imagen.",

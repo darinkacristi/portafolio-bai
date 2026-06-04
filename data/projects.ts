@@ -141,7 +141,7 @@ export const projects: Project[] = [
     slug: "fruti-feria-expansion",
     title: "Video para Proyecto de Expansión",
     type: "video",
-    client: "Fruti Feria",
+    client: "Frutiferia",
     year: 2026,
     thumbnail: "", // se genera desde Vimeo
     videoUrl: "https://vimeo.com/1198474686?share=copy&fl=sv&fe=ci",

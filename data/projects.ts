@@ -65,7 +65,7 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
     year: 2026,
     thumbnail: "/projects/coterranea.jpeg",
     images: [
-      "/projects/coterranea.jpeg",
+      "/projects/coterranea-1.jpeg",
   
     ],
     description:

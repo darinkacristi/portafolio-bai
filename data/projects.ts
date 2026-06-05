@@ -23,8 +23,8 @@ Objetivo del video: Posicionar un producto específico (tofu) mediante un format
     slug: "terramore",
     title: "Terramore",
     type: "photo",
-    client: "Palati",
-    year: 2026,
+    client: "Terramore",
+    year: 2024,
     thumbnail: "/projects/terramore-1.png",
     images: [
       "/projects/terramore-1.png",

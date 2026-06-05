@@ -7,7 +7,7 @@ export function Divider() {
 export default function Footer() {
   return (
     <footer className="bg-bg py-8 text-center text-[0.55rem] font-semibold uppercase tracking-[0.2em] text-ink3">
-      ✦ BAI Portfolio · Creado con amor pastel · Chile ✦
+      ✦ Bai Portfolio · Creado por DRK · Chile ✦
     </footer>
   );
 }

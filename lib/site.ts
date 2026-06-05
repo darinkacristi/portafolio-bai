@@ -8,10 +8,10 @@ export const siteConfig = {
   locale: "es_CL",
   author: "BAI",
   contact: {
-    email: "bai@correo.com",
-    instagram: "https://instagram.com/",
+    email: "baithiarevasquez2023@gmail.com",
+    instagram: "https://instagram.com/bpvcreative",
     youtube: "https://youtube.com/",
-    whatsapp: "https://wa.me/56900000000",
+    whatsapp: "https://wa.me/56997420503",
   },
   nav: [
     { label: "Inicio", href: "/" },

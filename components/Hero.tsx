@@ -4,14 +4,6 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Blobs from "./Blobs";
 
-const TAGS = [
-  ["bg-blush", "Fotografía"],
-  ["bg-mint", "Video Cinemático"],
-  ["bg-lilac", "Dirección Creativa"],
-  ["bg-butter", "Diseño Visual"],
-  ["bg-sky", "Editorial"],
-];
-
 const STICKERS = [
   { e: "🦋", c: "top-[14%] left-[7%] text-[2.5rem]", d: 0 },
   { e: "🌸", c: "top-[18%] right-[9%]", d: 0.8 },
@@ -52,42 +44,44 @@ export default function Hero() {
         variants={container}
         initial="hidden"
         animate="show"
-        className="relative z-[3] text-center"
+        className="relative z-[3] max-w-[760px] text-center"
       >
         <motion.h1
           variants={item}
-          className="text-[clamp(6rem,22vw,18rem)] font-black uppercase leading-[0.88] tracking-[-0.03em] text-ink"
+          className="text-[clamp(2.6rem,9vw,7rem)] font-black uppercase leading-[0.92] tracking-[-0.03em] text-ink"
         >
-          BAI
+          Baithiare<br />Vásquez
         </motion.h1>
 
         <motion.p
           variants={item}
-          className="mt-3 text-[clamp(0.8rem,2.2vw,1.1rem)] font-light italic tracking-[0.04em] text-ink2"
+          className="mt-5 text-[clamp(0.85rem,2.4vw,1.25rem)] font-semibold uppercase tracking-[0.14em] text-ink2"
         >
-          Filmmaker · Fotógrafa · Directora Creativa
+          Comunicadora Audiovisual · Editora de Video
+        </motion.p>
+
+        <motion.p
+          variants={item}
+          className="mx-auto mt-4 max-w-[480px] text-[clamp(0.85rem,2vw,1.05rem)] font-light italic leading-relaxed text-ink2"
+        >
+          +3 años creando contenido para marcas, empresas y redes sociales.
         </motion.p>
 
         <motion.div
           variants={item}
-          className="mt-7 flex flex-wrap justify-center gap-2.5"
+          className="mt-9 flex flex-wrap justify-center gap-3"
         >
-          {TAGS.map(([bg, label]) => (
-            <span
-              key={label}
-              className={`pill font-bold transition-transform hover:scale-[1.08] ${bg}`}
-            >
-              {label}
-            </span>
-          ))}
-        </motion.div>
-
-        <motion.div variants={item} className="mt-9">
           <Link
             href="/portfolio"
-            className="inline-block rounded-full bg-ink px-12 py-4 text-[0.7rem] font-bold uppercase tracking-[0.25em] text-bg no-underline transition-all hover:scale-[1.04] hover:bg-ink2"
+            className="inline-block rounded-full bg-ink px-10 py-4 text-[0.7rem] font-bold uppercase tracking-[0.22em] text-bg no-underline transition-all hover:scale-[1.04] hover:bg-ink2"
           >
-            Ver mi trabajo
+            Ver proyectos
+          </Link>
+          <Link
+            href="/contact"
+            className="inline-block rounded-full border-[1.5px] border-ink px-10 py-4 text-[0.7rem] font-bold uppercase tracking-[0.22em] text-ink no-underline transition-all hover:scale-[1.04] hover:bg-ink hover:text-bg"
+          >
+            Trabajemos juntos
           </Link>
         </motion.div>
       </motion.div>

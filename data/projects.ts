@@ -12,8 +12,8 @@ export const projects: Project[] = [
     description: `Cliente: Frutiferia (E-commerce y distribuidor de frutas, verduras y productos saludables en la Región de Valparaíso). 🍉🍍
 
 Objetivo del video: Posicionar un producto específico (tofu) mediante un formato educativo y colaborativo. El video busca resolver una necesidad común del público objetivo (cómo aumentar el consumo de proteína diariamente) a través de tres recetas rápidas, demostrando que comer sano no es aburrido ni complejo, impulsando así la compra del ingrediente en su plataforma. 💪`,
-    roles: ["Dirección", "Dirección de Fotografía", "Edición", "Colorización"],
-    categories: ["Edición", "Grabación", "Guionización", "Colorización"],
+    roles: ["Guionización", "Grabación", "Dirección", "Edición", "Colorización", "Motion Graphics", "Sonido"],
+    categories: ["Guionización", "Grabación", "Edición", "Colorización", "Motion Graphics"],
     featured: true,
     accent: "#B8F0D8",
     aspect: "vertical",
@@ -31,8 +31,8 @@ Objetivo del video: Posicionar un producto específico (tofu) mediante un format
       "/projects/terramore-2.png",
     ],
     description: "Descripción del proyecto.",
-    roles: ["Fotografía", "Iluminación", "Edición"],
-    categories: ["Fotografía"],
+    roles: ["Fotografía", "Iluminación", "Dirección Creativa", "Edición", "Retoque", "Dirección de Arte"],
+    categories: ["Fotografía", "Edición"],
     featured: true,
     accent: "#FFB8D0",
   },
@@ -49,7 +49,7 @@ Objetivo del video: Posicionar un producto específico (tofu) mediante un format
 Edición de video corporativo realizado para respaldar la presentación de un proyecto de expansión postulado a fondos de financiamiento.
 
 A través del montaje, la estructura narrativa y el tratamiento audiovisual, el objetivo fue transmitir de forma clara la visión, trayectoria y proyección de crecimiento de la empresa.`,
-    roles: ["Edición", "Motion Graphics"],
+    roles: ["Edición", "Colorización", "Motion Graphics", "Sonido"],
     categories: ["Edición", "Colorización", "Motion Graphics"],
     featured: true,
     accent: "#B8F0D8",
@@ -69,8 +69,8 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
     ],
     description:
       "Editorial de moda inspirada en la fragilidad del invierno. Retratos con luz natural difusa, tonos pastel y una dirección de arte minimalista que deja respirar a cada imagen.",
-    roles: ["Dirección Creativa", "Fotografía", "Retoque", "Producción"],
-    categories: ["Fotografía"],
+    roles: ["Fotografía", "Iluminación", "Dirección Creativa", "Edición", "Retoque", "Dirección de Arte"],
+    categories: ["Fotografía", "Edición"],
     featured: true,
     accent: "#FFB8D0",
   },
@@ -83,8 +83,8 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
     thumbnail: "",
     videoUrl: "https://www.youtube.com/shorts/kesmerWhCao",
     description: `Descripción del proyecto.`,
-    roles: ["Edición", "Grabación", "Motion Graphics", "Colorización"],
-    categories: ["Edición", "Grabación", "Motion Graphics", "Colorización"],
+    roles: ["Grabación", "Dirección", "Dirección de Fotografía", "Edición", "Colorización", "Motion Graphics", "Sonido"],
+    categories: ["Grabación", "Edición", "Colorización", "Motion Graphics"],
     featured: true,
     aspect: "vertical",
     credits: [{ role: "Edición", name: "Baithiare Vásquez" }],
@@ -98,7 +98,7 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
     thumbnail: "",
     videoUrl: "https://www.youtube.com/shorts/a6x9gfNNoR4",
     description: `Descripción del proyecto.`,
-    roles: ["Grabación", "Dirección", "Edición", "Colorización"],
+    roles: ["Grabación", "Dirección", "Edición", "Colorización", "Sonido"],
     categories: ["Grabación", "Edición", "Colorización"],
     featured: true,
     aspect: "vertical",
@@ -113,13 +113,13 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
     thumbnail: "",
     videoUrl: "https://www.youtube.com/shorts/IrmYo82d3DU",
     description: `Descripción del proyecto.`,
-    roles: ["Grabación", "Dirección", "Edición", "Colorización"],
+    roles: ["Grabación", "Dirección", "Edición", "Colorización", "Sonido"],
     categories: ["Grabación", "Edición", "Colorización"],
     featured: true,
     aspect: "vertical",
     credits: [{ role: "Realización", name: "Baithiare Vásquez" }],
   },
-    {
+  {
     slug: "coterranea",
     title: "Tupungato de Coterránea",
     type: "photo",
@@ -128,15 +128,14 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
     thumbnail: "/projects/coterranea-1.jpeg",
     images: [
       "/projects/coterranea-1.jpeg",
-  
     ],
     description:
       "Editorial de moda inspirada en la fragilidad del invierno. Retratos con luz natural difusa, tonos pastel y una dirección de arte minimalista que deja respirar a cada imagen.",
-    roles: ["Dirección Creativa", "Fotografía", "Retoque", "Producción"],
-    categories: ["Fotografía"],
+    roles: ["Fotografía", "Edición", "Retoque"],
+    categories: ["Fotografía", "Edición"],
     featured: true,
     accent: "#FFB8D0",
-    aspect: "horizontal"
+    aspect: "horizontal",
   },
   {
     slug: "examen-60seg",
@@ -149,8 +148,8 @@ A través del montaje, la estructura narrativa y el tratamiento audiovisual, el 
     description: `Edición de contenido de alto impacto para Prime Propiedades, un proyecto desarrollado desde mi rol como editora de video en la agencia Bluro. ⌨️💻
 
 El objetivo de esta pieza fue dinamizar un contenido clave para el sector inmobiliario: cómo filtrar correctamente a los interesados al vender una propiedad para no perder tiempo con perfiles que no van a comprar. A través del montaje, el ritmo y la estructura visual, logramos transformar una explicación técnica en un formato ágil, entretenido y directo al grano. ⌨️`,
-    roles: ["Edición", "Colorización"],
-    categories: ["Edición", "Colorización"],
+    roles: ["Edición", "Colorización", "Motion Graphics", "Sonido"],
+    categories: ["Edición", "Colorización", "Motion Graphics"],
     featured: true,
     accent: "#B8F0D8",
     aspect: "vertical",
@@ -169,14 +168,13 @@ El objetivo de esta pieza fue dinamizar un contenido clave para el sector inmobi
 Proyecto audiovisual donde estuve a cargo de la grabación y edición completa del contenido, capturando el día a día de la empresa desde una mirada cercana, dinámica y auténtica.
 
 Una pieza pensada para fortalecer la conexión de la marca con su audiencia a través de contenido más humano y espontáneo.`,
-    roles: ["Grabación", "Edición", "Corrección de color"],
-    categories: ["Edición", "Guionización", "Colorización", "Grabación"],
+    roles: ["Guionización", "Grabación", "Dirección", "Dirección de Fotografía", "Edición", "Colorización", "Motion Graphics", "Sonido"],
+    categories: ["Guionización", "Grabación", "Edición", "Colorización", "Motion Graphics"],
     featured: true,
     accent: "#B8F0D8",
     aspect: "vertical",
     credits: [{ role: "Realización", name: "Baithiare Vásquez" }],
   },
- 
   {
     slug: "coterranea-ejecutivas",
     title: "Ejecutivas de Venta",
@@ -187,13 +185,10 @@ Una pieza pensada para fortalecer la conexión de la marca con su audiencia a tr
     images: [
       "/projects/ejecutivas-1.png",
       "/projects/ejecutivas-2.png",
-      "/projects/ejecutivas-1.png",
-      "/projects/ejecutivas-1.png",
-      
     ],
     description:
       "Lookbook de temporada para una marca de lifestyle. Fotografía fresca al aire libre, paleta luminosa y una dirección de arte que respira frescura y juventud.",
-    roles: ["Dirección Creativa", "Fotografía", "Producción", "Edición"],
+    roles: ["Fotografía", "Dirección Creativa", "Edición", "Retoque"],
     categories: ["Fotografía", "Edición"],
     accent: "#B8F0D8",
     aspect: "portrait",
@@ -218,14 +213,13 @@ export function getProject(slug: string): Project | undefined {
   return projects.find((p) => p.slug === slug);
 }
 
-// Proyectos que aparecen en el inicio, en el orden que tú quieras (por slug)
 export const featuredSlugs: string[] = [
-  "meflipa",                // foto
-  "coterranea",             // 
-  "beneficios-del-tofu",    // video
-  "coterranea-ejecutivas",  // foto 4:5
-  "fruti-feria-expansion",  // video
-  "examen-60seg",           // video
+  "meflipa",
+  "coterranea",
+  "beneficios-del-tofu",
+  "coterranea-ejecutivas",
+  "fruti-feria-expansion",
+  "examen-60seg",
 ];
 
 export function getFeatured(): Project[] {

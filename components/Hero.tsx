@@ -50,7 +50,7 @@ export default function Hero() {
           variants={item}
           className="text-[clamp(2.6rem,9vw,7rem)] font-black uppercase leading-[0.92] tracking-[-0.03em] text-ink"
         >
-          Baithiare<br />Vásquez
+          Baithiare Vásquez
         </motion.h1>
 
         <motion.p

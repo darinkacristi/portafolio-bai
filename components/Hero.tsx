@@ -57,14 +57,14 @@ export default function Hero() {
           variants={item}
           className="mt-5 text-[clamp(0.85rem,2.4vw,1.25rem)] font-semibold uppercase tracking-[0.14em] text-ink2"
         >
-          Comunicadora Audiovisual · Editora de Video
+         Contenido audiovisual para redes sociales, marcas y empresas.
         </motion.p>
 
         <motion.p
           variants={item}
           className="mx-auto mt-4 max-w-[480px] text-[clamp(0.85rem,2vw,1.05rem)] font-light italic leading-relaxed text-ink2"
         >
-          +3 años creando contenido para marcas, empresas y redes sociales.
+         Comunicadora audiovisual · Editora de video · +3 años de experiencia
         </motion.p>
 
         <motion.div

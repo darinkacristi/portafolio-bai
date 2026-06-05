@@ -20,6 +20,23 @@ Objetivo del video: Posicionar un producto específico (tofu) mediante un format
     credits: [{ role: "Producción", name: "Baithiare Vásquez" }],
   },
   {
+    slug: "palati",
+    title: "Palati",
+    type: "photo",
+    client: "Palati",
+    year: 2026,
+    thumbnail: "/projects/palati-1.png",
+    images: [
+      "/projects/palati-1.png",
+      "/projects/palati-2.png",
+    ],
+    description: "Descripción del proyecto.",
+    roles: ["Fotografía", "Iluminación", "Edición"],
+    categories: ["Fotografía"],
+    featured: true,
+    accent: "#FFB8D0",
+  },
+  {
     slug: "fruti-feria-expansion",
     title: "Video para Proyecto de Expansión",
     type: "video",
